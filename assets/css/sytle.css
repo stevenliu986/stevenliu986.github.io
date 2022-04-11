@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Poppins:ital,wght@1,200&display=swap');
+
+/* 解决body头部被导航栏遮挡的问题 */
+body::before {
+  display: block;
+  content: "";
+  height: 56px;
+}
+
+/* 解决section内容被导航栏遮挡的问题 */
+section::before {
+  display: block;
+  content: "";
+  height: 56px;
+}
+
+ul {
+  display: flex;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+
+.social li {
+  list-style: none;
+  /* 由于背景是黑色，所以将social图标颜色反转 */
+  filter: invert(1);
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.social li:hover {
+  transform: translateY(-5px);
+}
+
+/* 定义段落字体 */
+p h2 {
+  font-family: 'Inter', sans-serif;
+}
+
+/* footer部分的social icons居中 */
+.footer-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icon>li {
+  list-style: none;
+  padding: 0 25px;
+}
